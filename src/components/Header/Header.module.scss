@@ -1,14 +1,22 @@
 @import 'stylesheets/main.scss';
 
 .wrapper {
-  position: relative;
+  position: absolute;
+  left: 15%;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   background: rgba($color-five, 0.2);
-  height: vw(20px);
-  padding: vw(15px) 0 vw(15px) vw(15px);
+  height: vw(50px);
+  //padding: vw(15px) 0 vw(15px) vw(15px);
+  font-size: vw(16px);
   @include xl {
     justify-content: space-between;
+  }
+
+  .user-profile {
+    margin-left: vw(15px);
   }
 
   .right-buttons {
